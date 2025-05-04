@@ -384,14 +384,17 @@ export default function MessagingApp() {
                               });
                               setSelectedMessageId(message.id);
                             }}
-                            className={`absolute opacity-0 group-hover:opacity-100 ${
-                              theme === 'dark' ? 'text-gray-300' : 'text-gray-500'
+                            className={`absolute -bottom-3 opacity-0 group-hover:opacity-100 flex items-center justify-center w-8 h-8 rounded-full ${
+                              theme === 'dark' 
+                                ? 'bg-white/90 text-gray-800 shadow-sm' 
+                                : 'bg-blue-500/90 text-white shadow-sm'
                             } ${
                               message.sender === 'user'
-                                ? 'right-0 -bottom-3'  // Right side for sent messages
-                                : 'left-0 -bottom-3'   // Left side for received
+                                ? 'left-0 -bottom-3'  // Right side for sent messages
+                                : 'right-0 -bottom-3'   // Left side for received
                             }`}
                             whileHover={{ scale: 1.2 }}
+                            whileTap={{ scale: 0.9 }}
                           >
                             <span className="text-lg">➕</span>
                           </motion.button>
