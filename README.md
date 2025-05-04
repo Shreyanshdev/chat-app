@@ -1,37 +1,55 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Next.js Messaging App
 
-## Getting Started
+A modern chat application with Instagram-like features built with Next.js, TypeScript, and Framer Motion.
 
-First, run the development server:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## ✨ Key Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 🎨 Theme System
+- Light/dark mode toggle
+- Persistent theme preference (saves to localStorage)
+- Theme-adaptive UI components
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 💬 Messaging
+- Real-time message display
+- Automatic scroll to new messages
+- "Someone is typing..." indicator
+- Message bubbles with different styling for sent/received
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 👥 Contacts List
+- User avatars with online status indicators
+  - 🟢 Online
+  - 🟡 Away
+  - ⚪ Offline
+- Custom status messages
+- Mobile-friendly sidebar with toggle
 
-## Learn More
+### ❤️ Reactions
+- Instagram-style emoji reactions
+- Single-tap reaction addition
+- Visual reaction counts
+- Works for both sent and received messages
 
-To learn more about Next.js, take a look at the following resources:
+### 📱 Responsive Design
+- Mobile-first approach
+- Desktop-optimized layout
+- Sticky input field that stays visible
+- Adaptive message bubbles
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 🎭 Animations
+- Smooth message transitions
+- Reaction picker animations
+- Interactive button effects
+- Theme toggle micro-interactions
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🛠️ Technical Stack
 
-## Deploy on Vercel
+- **Framework**: Next.js (App Router)
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS
+- **Animations**: Framer Motion
+- **Icons**: React Icons
+- **Fonts**: Geist/Inter
+- **State Management**: React hooks
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-# chat-app
+#
